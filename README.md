@@ -1,5 +1,6 @@
 # portifolio
 
-Esse será meu primeiro portifólio 
+Esse é o meu primeiro portifólio
 
-**Ainda em Produção**
+
+**CONFIRA!**
