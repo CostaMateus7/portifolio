@@ -3,10 +3,14 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: 'Oswald', sans-serif;
+  overflow-x:hidden;
+  
 }
 body{
   width: 100%;
   background-color: #fff;
+  overflow-x:hidden;
+
 }
 header{
   padding: 10px;
@@ -46,6 +50,7 @@ header ul{
 #sobreMim p{
   font-size: 22px;
   overflow-wrap: break-word;
+  width: 85%;
 }
 #sobreMim h1{
   margin-bottom: 20px;
@@ -96,7 +101,7 @@ header ul{
   text-align: center;
   margin-bottom: 60px;
 }
-#html, #css, #node, #wordpress{
+#html, #css, #node, #wordpress, #postgres, #react{
   border-right:dashed 1px black;
 }
 .projeto{
@@ -143,6 +148,9 @@ header ul{
   margin: 50px;
 }
 @media (max-width:600px) {
+  body{
+    overflow-x:hidden;
+  }
   #conteinerQuemSouEu{
     border-bottom: dashed 1px black;
     flex-direction: column;
@@ -166,21 +174,39 @@ header ul{
     height: 300px;
   }
 
-  #html, #css, #node, #wordpress{
+  #html, #css, #node, #wordpress, #postgres, #react{
     border-right: none;
   }
+  #wordpress{
+    display: none;
+  }
   #tecnologias, #projetos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #projetos{
     display: flex;
     flex-direction: column;
   }
   #tecnologias img{
-    width: 130px;
-    height: 130px;
+    width: 80px;
+    height: 80px;
   }
-  #tituloTecnologia{
-    font-size: 35px; 
-  }
+  
   #tecnologias{
     border-bottom: dashed 1px black;
+    
   }
+  .projeto{
+    width: 300px;
+    height: 500px; 
+    margin: auto;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  .projeto img{
+    width: 280px;
+    height: 280px;
+  }
+  
 }
