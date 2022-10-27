@@ -15,10 +15,12 @@ body{
 header{
   padding: 10px;
   margin-bottom: 20px;
-
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
 }
 header ul{
-  display: inline-block;
+  float: left;
   margin-left: 20px;
 }
 
@@ -32,14 +34,14 @@ header ul{
   margin-left: 10px;
 }
 #conteinerLogo{
-  display: inline-block;
+  float: right;
 }
 #conteinerQuemSouEu{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding-bottom: 15px;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 #sobreMim{
   width: 45%;
